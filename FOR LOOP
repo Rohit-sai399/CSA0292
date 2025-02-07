@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main()
+{ 
+    int i, n;
+    printf("enter required number of loops\n");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+    printf("carl\n");
+    }
+        
+        
+        return 0;
+}
