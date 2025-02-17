@@ -1,0 +1,24 @@
+ #include <stdio.h>
+int main() 
+{
+  int A[2][2]={10,8,7,12};
+  int B[2][2]={8,2,5,6};
+  int sub[2][2]={0,0,0,0};
+  int i,j;
+  for(i=0;i<2;i++)
+  {
+      for(j=0;j<2;j++)
+      {
+      sub[i][j]=A[i][j]-B[i][j];
+      }
+  }
+  for(i=0;i<2;i++)
+  {
+      for(j=0;j<2;j++)
+      {
+          printf("%d\t",sub[i][j]);
+      }
+      printf("\n");
+  }
+    return 0;
+} 
