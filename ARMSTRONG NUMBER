@@ -1,0 +1,21 @@
+#include <stdio.h>
+int main()
+{
+int num=9474,original_num,rem,result=0;
+num=original_num;
+while(original_num!=0)
+{
+    original_num%10;
+    result+=rem*rem*rem;
+    original_num/=10;
+}
+if(result==original_num)
+{
+    printf("entered number is an armstrong number");
+}
+else
+{
+    printf("entered number is not an armstrong number");
+}
+return 0;
+}
