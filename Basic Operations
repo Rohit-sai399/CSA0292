@@ -1,0 +1,12 @@
+#include<stdio.h>
+
+int main()
+{
+    int a=3,b=9,c;
+    printf("sum=%d\n",a+b);
+    printf("sub=%d\n",a-b);
+    c=a*b;
+    printf("product=%d\n",c);
+    printf("quotient when b id divided by a=%d\n",b/a);
+    printf("remainder when b is divided by a is =%d\n",b%a);
+}
