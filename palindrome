@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+int num=121,originalnum,reversednum=0,remainder;
+originalnum=num;
+while(num>0)
+{
+    remainder=num%10;
+    reversednum=reversednum*10+remainder;
+    originalnum/=10;
+}
+if(num=originalnum)
+{
+    printf("palindrome");
+}
+else
+printf("not");
+}
