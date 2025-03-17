@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+ int i,num=3;
+ unsigned long long fact=1;
+ 
+ if(num<0)
+ {
+     printf("factorial doesnot exsist");
+ }
+ else
+ {
+     for(i=1;i<=num;i++)
+     {
+         fact*=i;
+     }
+ }
+     printf("factorial of %d=%llu\n",num,fact);
+ 
+
+ return 0;
+}
