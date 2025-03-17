@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+int next_term,i,n=9;
+int t1=0,t2=1;
+
+for(i=0;i<=n;i++)
+{
+    next_term=t1+t2;
+    printf("  %d",next_term);
+    t1=t2;
+    t2=next_term;
+    
+}
+printf("\n");
+}
