@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main() {
+ int a,b;
+ char operator;
+ 
+ printf("enter values of a and b\n");
+ scanf("%d%d",&a,&b);
+ 
+printf("enter a operator(+,-,*,/)");
+scanf(" %c", &operator);
+
+switch (operator)
+{
+    case'+':
+    printf("sum=%d",a+b);
+    break;
+    case'-':
+    printf("sub=%d",a-b);
+        break;
+    case '*':
+    printf("mul=%d",a*b);
+      break;
+    case '/': 
+    if(b==0)
+    {
+        printf("division is not possible");
+    }
+    else
+    {
+        printf("div=%d",a/b);
+    }
+        break;
+    default:
+    printf("entered invalid character");
+}
+}
