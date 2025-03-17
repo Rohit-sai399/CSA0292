@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+   char ch='A';
+   
+   if(ch>='A' &&ch<='Z')
+   {
+       printf("captial\n");
+   }
+   else if(ch>='a'&&ch<='z')
+   {
+       printf("small");
+      
+   }
+   else if(ch>='0'&&ch<='9')
+   {
+       printf("digit\n");
+   }
+   else
+   printf("special character");
+}
