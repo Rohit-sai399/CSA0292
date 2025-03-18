@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include<string.h>
+
+int main()
+{
+  char ch,s[]={"Sai Rohit is a good boy"
+                "he drinks coffee daily"};
+int count=2,i;
+
+for(i=0;s[i]!='\0';i++)
+{
+    ch=s[i];
+    if(ch==' '||ch=='\n')
+    {
+        count++;
+    }
+}
+printf("number of words=%d",count);
+}
