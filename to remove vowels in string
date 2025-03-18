@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include<string.h>
+
+int main()
+{
+  char s[]={"coffee"};
+  int j,i;
+  for(i=0;s[i]!='\0';i++)
+
+  if (s[i] == 'a' || s[i] == 'e' || s[i] == 'i' || s[i] == 'o' || s[i] == 'u' ||
+            s[i] == 'A' || s[i] == 'E' || s[i] == 'I' || s[i] == 'O' || s[i] == 'U') 
+            {
+                for(j=i;s[j]!='\0';j++)
+                {
+                    s[j]=s[j+1];
+                    
+                }
+                i--;
+            }
+                printf("sorted string=%s",s);
+  }
