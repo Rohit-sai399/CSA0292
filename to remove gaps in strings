@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include<string.h>
+
+int main()
+{
+  char s[]={"coffee is goof for helath"};
+  int j,i;
+  for(i=0;s[i]!='\0';i++)
+
+  if (s[i]==' ')
+            {
+                for(j=i;s[j]!='\0';j++)
+                {
+                    s[j]=s[j+1];
+                    
+                }
+                i--;
+            }
+                printf("sorted string=%s",s);
+  }
