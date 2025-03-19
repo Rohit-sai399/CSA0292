@@ -1,0 +1,14 @@
+#include <stdio.h>
+void sum(int*a,int*b)
+{
+    int temp;
+    temp=*a;
+    *a=*b;
+    *b=temp;
+}
+int main()
+{
+    int x=6,y=5;
+    sum(&x,&y);
+    printf("x=%d,y=%d",x,y);
+}
