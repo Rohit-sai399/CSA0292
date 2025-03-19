@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main() {
+   int a[]={1,8,9,7,6};
+   int*ptr=a;
+   printf("%d\n",*ptr);
+   printf("%d\n",*ptr++);
+   printf("%d\n",*ptr);
+   printf("%d\n",++*ptr);
+}
