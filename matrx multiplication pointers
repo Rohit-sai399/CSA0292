@@ -1,0 +1,36 @@
+#include<stdio.h>
+int main()
+{
+    int a[2][3]={1,2,3,4,5,6};
+    int b[3][2]={1,2,3,4,5,6};
+    int c[2][2]={0};
+    int i,j,k;
+    int*p;
+    int*q;
+    int*r;
+    
+    for(i=0;i<2;i++)
+    {
+        
+        for(j=0;j<2;j++)
+        {
+             r = &c[i][j]; 
+            *r = 0;
+            for(k=0;k<3;k++)
+            {
+                p=&a[i][k];
+                q=&b[k][j];
+                *r += (*p) * (*q);
+            }
+        }
+    }
+   printf("Matrix Multiplication Result:\n");
+    for ( i = 0; i < 2; i++) {
+        for ( j = 0; j < 3; j++){
+            printf("%d\t",c[i][j]);
+        }
+        printf("\n");
+    }
+}
+        
+   
