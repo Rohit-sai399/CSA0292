@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main()
+{
+    int arr[]={2,9,7,6,5};
+    int *i=arr;
+    int*j=arr+5-1;
+    int temp;
+    int k;
+    
+    while(i<j)
+    {
+        temp=*i;
+        *i=*j;
+        *j=temp;
+        
+        *(i++);
+        *(j--);
+        
+    }
+    printf("reversed array=\n");
+    for(k=0;k<=4;k++)
+    {
+        printf("%d\t",arr[k]);
+    }
+
+   
+   
+}
+
