@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+
+    char str[]={"SAIROHIT"};
+    char*p=str;
+
+    int vowels=0,conso=0;
+    
+    while(*p!='\0')
+    {
+        if(*p=='A'||*p=='E'||*p=='I'||*p=='O'||*p=='U')
+        {
+            vowels++;
+        }
+        else
+        {
+            conso++;
+        }
+        p++;
+    }
+    printf("vowels=%d\n",vowels);
+    printf("consonants=%d",conso);
+}
+    
+   
