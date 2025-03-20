@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    char str1[]={"JENNY"};
+    char str2[]={" SAIROHIT"};
+    char*p=str1;
+    char*q=str2;
+    while(*q!='\0')
+    {
+      q++;
+    }
+    while(*p!='\0')
+    {
+        *q=*p;
+        p++;
+        q++;
+    }
+    *q='\0';
+        
+    printf("%s",str2);
+   
+}
