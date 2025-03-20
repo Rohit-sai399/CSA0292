@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+
+    char str[]={"madam"};
+    char *p=str;
+    char*q=str+4;
+    
+    while(p<q)
+    {
+       if(*p!=*q)
+       {
+           printf("not palindromes");
+       }
+      
+       p++;
+       q--;
+    }
+          printf("palindrome");
+     
+}
+    
