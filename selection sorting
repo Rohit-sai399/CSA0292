@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main()
+{
+    int arr[] = {2, 4, 66, 4, 8, 9}; 
+    int min, i, j;
+    int *ptr = arr;
+    int temp;
+
+    // Selection Sort using pointers
+    for (i = 0; i < 5; i++)  // Outer loop for selection
+    {
+        min = i;  // Assume current index has the minimum
+        
+        for (j = i + 1; j < 6; j++)  // Inner loop to find minimum
+        {
+            if (*(ptr + j) < *(ptr + min))  // Corrected condition
+            {
+                min = j;  // Update min index
+            }
+        }
+        
+        // Swap the minimum element with the current position
+        if (min != i) 
+        {
+            temp = *(ptr + i);
+            *(ptr + i) = *(ptr + min);
+            *(ptr + min) = temp;
+        }
+    }
+
+    // Printing sorted array
+    printf("Sorted array:\n");
+    for (i = 0; i < 6; i++)
+    {
+        printf("%d\t", arr[i]);
+    }
+
+    return 0;
+}
