@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    char str[]={"JENNY"};
+    char *ptr=str;
+    int length=0;
+    
+    while(*ptr!='\0')
+    {
+        length++;
+        ptr++;
+    }
+
+    printf("%d",length);
+   
+}
