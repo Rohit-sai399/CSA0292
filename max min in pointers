@@ -1,0 +1,24 @@
+#include <stdio.h>
+int findmaxmin(int *a,int *b,int *max, int*min){
+if(*a>*b)
+{
+*max=*a;
+*min=*b;}
+else 
+{
+*max=*b;
+*min=*a;
+ }
+ return 0;
+}
+int main() {
+    int x=100,y=20;
+   int max,min;
+   findmaxmin(&x,&y,&max,&min);
+   
+   printf("max=%d,min=%d",max,min);
+   
+   
+    return 0;
+}
+
