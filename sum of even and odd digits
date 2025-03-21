@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    int num=1234,rem,even_sum=0,odd_sum=0;
+    while(num!=0)
+    {
+        rem=num%10;
+        if(rem%2==0)
+        {
+          even_sum+=rem;
+        }
+        else
+        {
+       odd_sum+=rem;
+        }
+        num/=10;
+        
+    }
+    printf("sum of even digits=%d\n",even_sum);
+    printf("sum of odd digits=%d",odd_sum);
+}
