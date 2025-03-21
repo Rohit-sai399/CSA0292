@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int max(int a, int b)
+{
+    int maximum_value;
+    if(a>b)
+    {
+        maximum_value=a;
+    }
+    else
+    {
+        maximum_value=b;
+    }
+    
+}
+int main()
+{
+    int num1=200,num2=800,maximum_value;
+    maximum_value=max(num1,num2);
+    printf("maximum value=%d",maximum_value);
+}
