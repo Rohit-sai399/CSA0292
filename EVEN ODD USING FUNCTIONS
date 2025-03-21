@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int fun(int a)
+{
+    int x;
+    x= (a%2==0)?1:0;
+    return x;
+}
+int main()
+{
+   int n=234,x;
+   x=fun(n);
+   if(x==1)
+   {
+       printf("even");
+   }
+   else
+   {
+       printf("odd");
+   }
+}
