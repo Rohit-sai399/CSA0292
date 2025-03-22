@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+    int start=10,end=50,i,num;
+
+ for(num=start;num<=end;num++)
+ {
+     int isprime=1;
+     if(num<2)
+     {
+         isprime=0;
+        
+     }
+     for(i=2;i*i<=num;i++)
+     {
+         if(num%i==0){
+        isprime=0;
+        break;
+             
+         }
+     }
+     
+     if(isprime==1)
+     {
+         printf("%d,",num);
+     }
+ 
+ }
+     return 0;
+}
